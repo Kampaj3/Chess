@@ -1,13 +1,14 @@
 package com.chess.piece;
 
+
 import com.chess.squares.Square;
 
-public class Piece {
+public abstract class Piece {
     protected String name;
     protected PieceColor pieceColor;
     protected Square currentSquare;
 
-    public Piece(PieceColor pieceColor){
+    public Piece(PieceColor pieceColor) {
         this.pieceColor = pieceColor;
     }
 
@@ -32,7 +33,6 @@ public class Piece {
         return "Piece{" +
                 "name='" + name + '\'' +
                 ", pieceColor=" + pieceColor +
-                ", currentSquare=" + currentSquare +
                 '}';
     }
 }
